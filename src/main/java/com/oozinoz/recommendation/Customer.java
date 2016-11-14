@@ -36,7 +36,7 @@ public class Customer {
      * This method demonstrates that the class can actually find the properties
      * file that lists a strategic promotion. If you set your classpath to
      * include the "oozinoz" directory that you can download from oozinoz.com,
-     * this program will find the strategy.dat file that lists a promoted
+     * this program will find the Duck.dat file that lists a promoted
      * firework. In short it's an example of finding and reading from a
      * properties file.
      */

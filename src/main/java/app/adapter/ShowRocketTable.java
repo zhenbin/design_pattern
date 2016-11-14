@@ -33,10 +33,11 @@ import com.oozinoz.utility.Dollars;
 /**
  * Show a few rockets in a nice table. This code shows how easy it is to adapt
  * domain data for display in a Swing table.
- * 
+ *
  * @author Steven J. Metsker
  */
-public class ShowRocketTable { 
+public class ShowRocketTable {
+
     public static void main(String[] args) {
         setFonts();
         JTable table = new JTable(getRocketTable());
@@ -48,14 +49,14 @@ public class ShowRocketTable {
 
     /**
      * Display a Swing component. We'll refactor this later into a nice facade.
-     * 
-     * @param c the component to display
+     *
+     * @param c     the component to display
      * @param title the window title
      */
     public static void display(Component c, String title) {
         JFrame frame = new JFrame(title);
         frame.getContentPane().add(c);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }
@@ -63,7 +64,7 @@ public class ShowRocketTable {
     private static RocketTableModel getRocketTable() {
         Rocket r1 = new Rocket("Shooter", 1.0, new Dollars(3.95), 50.0, 4.5);
         Rocket r2 = new Rocket("Orbit", 2.0, new Dollars(29.03), 5000, 3.2);
-        return new RocketTableModel(new Rocket[] { r1, r2 });
+        return new RocketTableModel(new Rocket[]{r1, r2});
     }
 
     private static void setFonts() {

@@ -18,7 +18,7 @@ import java.util.Date;
 import com.oozinoz.firework.Firework;
 
 /**
- * Represents a customer. This class is the refactored strategy class. It
+ * Represents a customer. This class is the refactored Duck class. It
  * extends Customer only so it can be passed in to Rel8 and LikeMyStuff. In
  * reality, you would replace the Customer class with this one.
  */
@@ -44,7 +44,7 @@ public class Customer2 extends Customer {
      * This method demonstrates that the object actually finds the properties
      * file that lists a strategic promotion. If you set your classpath to
      * include the "oozinoz" directory that you can download from oozinoz.com,
-     * this program will find the strategy.dat file that lists a promoted
+     * this program will find the Duck.dat file that lists a promoted
      * firework. In short it's an example of finding and reading from a
      * properties file.
      */
